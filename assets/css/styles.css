@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: repeat;
+}
+
+.myMainHeaderStyle {
+    font-family: "Berlin Sans FB";
+    color: yellow;
+    font-size: 70px;
+    padding-top: 15px;
+}
+
+.mySecondHeaderStyle {
+    font-family: "Berlin Sans FB";
+    color: yellowgreen;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.myQuestionContainerStyle {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    background-color: rgb(17, 17, 17);
+}
+
+.myQuestionStyle {
+    color: gainsboro;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.myAnswerStyle {
+    color: gainsboro;
+    margin-left: 35px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.myAnswerStyle:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+    color: rgb(17, 17, 17);
+}
+
+.myTimerStyle {
+    font-family: "Broadway";
+    color: red;
+    margin-top: 80px;
+    font-size: 60px;
+}
+
+.resultContainer {
+    margin-top: 50px;
+    height: 750px;
+    padding-bottom: 40px;
+    background-color: rgb(26, 173, 100);
+}
+
+.correctOrIncorrect {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.endScreen {
+    margin-top: 50px;
+    height: 600px;
+    padding-bottom: 40px;
+    background-color: rgb(8, 32, 53);
+}

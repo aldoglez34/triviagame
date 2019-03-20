@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- link al css file -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+    <!-- link a bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- link to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- header -->
+    <div class="container" style="background-color: rgb(17, 17, 17);">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center myMainHeaderStyle">Trivial Trivia Game!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mySecondHeaderStyle">('90s version)</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- new game button -->
+    <div class="container" id="newGameContainer">
+        <div class="row" style="height: 80%">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-lg newGameButton">New Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- trivia question -->
+    <div class="container myQuestionContainerStyle" id="triviaQuestionContainer">
+        <div class="row">
+            <div class="col-12 text-center" style="background-color: rgb(5, 5, 5); padding-bottom: 20px;">
+                <h2 class="myQuestionStyle" id="question">Question</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 115px">
+            <div class="col-12">
+                <h3 class="myAnswerStyle answer" id="a1">Answer 1</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="myAnswerStyle answer" id="a2">Answer 2</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="myAnswerStyle answer" id="a3">Answer 3</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="myTimerStyle text-center" id="timer">10</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- result container -->
+    <div class="container resultContainer" id="resultContainer">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center correctOrIncorrect" id="coimsg"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <img id="gif">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center correctOrIncorrect" id="coimsg2" style="font-size: 30px;">10</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center correctOrIncorrect" id="coimsg3" style="font-size: 30px;">Next question coming up
+                    in: 10</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- end screen -->
+    <div class="container endScreen" id="endScreenContainer">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center myQuestionStyle" style="font-size: 35px;">Your result is: </h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px">
+            <div class="col-12">
+                <h1 class="text-center myQuestionStyle" id="correctA"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center myQuestionStyle" id="incorrectA"></h1>
+            </div>
+        </div>
+        <div class="row" style="height: 80%">
+            <div class="col-12 col-12 d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-lg newGameButton">Try again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- link al javascript file -->
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</httml>
