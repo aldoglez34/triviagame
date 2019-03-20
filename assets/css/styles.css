@@ -38,7 +38,7 @@ body {
 
 .myAnswerStyle:hover {
     cursor: pointer;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     color: rgb(17, 17, 17);
 }
 
