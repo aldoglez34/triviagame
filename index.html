@@ -14,104 +14,105 @@
     <!-- link to jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
 </head>
 
 <body>
 
-
-
     <!-- header -->
-    <div class="container" style="background-color: rgb(17, 17, 17);">
+    <div class="container css_header_container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center myMainHeaderStyle">Trivial Trivia Game!</h1>
+                <h1 class="text-center css_header_text1">Trivial Trivia Game!</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center mySecondHeaderStyle">('90s version)</h1>
+                <h1 class="text-center css_header_text2">'90s Edition</h1>
             </div>
         </div>
     </div>
 
-    <!-- new game button -->
-    <div class="container" id="newGameContainer">
-        <div class="row" style="height: 80%">
+    <!-- new game button container-->
+    <div class="container css_newgame_container" id="id_newgame_container">
+        <div class="row" style="height: 30%">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <button type="button" class="btn btn-primary btn-lg newGameButton">New Game</button>
+                <span class="css_newgame_button" id="id_newgame_button">START</span>
             </div>
         </div>
     </div>
 
-    <!-- trivia question -->
-    <div class="container myQuestionContainerStyle" id="triviaQuestionContainer">
+    <!-- question container -->
+    <div class="container css_question_container" id="id_question_container">
         <div class="row">
-            <div class="col-12 text-center" style="background-color: rgb(5, 5, 5); padding-bottom: 20px;">
-                <h2 class="myQuestionStyle" id="question">Question</h2>
+            <div class="col-12 text-center">
+                <h2 class="css_question_qText" id="id_question_qtext">Question</h2>
             </div>
         </div>
-        <div class="row" style="margin-top: 115px">
-            <div class="col-12">
-                <h3 class="myAnswerStyle answer" id="a1">Answer 1</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="myAnswerStyle answer" id="a2">Answer 2</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="myAnswerStyle answer" id="a3">Answer 3</h3>
+        <hr class="css_question_separator" />
+        <div class="container d-flex align-items-center" style="height: 250px;">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="css_question_aText" id="id_question_a1text">Answer 1</h3>
+                    <h3 class="css_question_aText" id="id_question_a2text"
+                        style="margin-top: 40px; margin-bottom: 40px;">Answer 2</h3>
+                    <h3 class="css_question_aText" id="id_question_a3text">Answer 3</h3>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="myTimerStyle text-center" id="timer">10</h3>
+                <h3 class="css_timer text-center" id="id_question_timer">10</h3>
             </div>
         </div>
     </div>
 
-    <!-- result container -->
-    <div class="container resultContainer" id="resultContainer">
+    <!-- result screen container -->
+    <div class="container css_result_container" id="id_result_container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center correctOrIncorrect" id="coimsg"></h1>
+                <h1 class="text-center css_result_text1" id="id_result_msg1"></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <img id="gif">
+                <img id="id_result_gif">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center correctOrIncorrect" id="coimsg2" style="font-size: 30px;">10</h1>
+                <h1 class="text-center css_result_text2" id="id_result_msg2" style="font-size: 30px;">
+                    10
+                </h1>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-12">
-                <h1 class="text-center correctOrIncorrect" id="coimsg3" style="font-size: 30px;">Next question coming up
-                    in: 10</h1>
+                <h1 class="text-center css_result_text" id="id_result_msg3" style="font-size: 30px;">
+                    Next question coming up in: 10
+                </h1>
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <!-- end screen -->
-    <div class="container endScreen" id="endScreenContainer">
+    <!-- end screen container -->
+    <div class="container css_endscreen_container" id="id_endscreen_container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center myQuestionStyle" style="font-size: 35px;">Your result is: </h1>
+                <h1 class="text-center css_endscreen_text" style="font-size: 35px;">Your result is: </h1>
             </div>
         </div>
         <div class="row" style="margin-top: 50px">
             <div class="col-12">
-                <h1 class="text-center myQuestionStyle" id="correctA"></h1>
+                <h1 class="text-center css_endscreen_text" id="id_endscreen_textCorrect"></h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center myQuestionStyle" id="incorrectA"></h1>
+                <h1 class="text-center css_endscreen_text" id="id_endscreen_textIncorrect"></h1>
             </div>
         </div>
         <div class="row" style="height: 80%">

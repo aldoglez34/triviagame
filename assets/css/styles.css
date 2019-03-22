@@ -1,70 +1,142 @@
 body {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.png");
     background-repeat: repeat;
 }
 
-.myMainHeaderStyle {
-    font-family: "Berlin Sans FB";
+/* headers */
+
+.css_header_container {
+    margin-top: 30px;
+    border-radius: 9px;
+    /* background-color: teal; */
+    background-color: rgb(19, 18, 18);
+    /* border-bottom: 10px solid yellow; */
+    /* border-left: 10px solid yellow;
+    border-right: 10px solid yellow; */
+}
+
+.css_header_text1 {
+    font-family: 'Press Start 2P', cursive;
     color: yellow;
-    font-size: 70px;
-    padding-top: 15px;
+    font-size: 40px;
+    padding-top: 35px;
+    text-shadow: -7px 0 DarkSlateGray, 0 0px black, 0px 0 black, 0 -0px black;
 }
 
-.mySecondHeaderStyle {
-    font-family: "Berlin Sans FB";
+.css_header_text2 {
+    font-family: 'Press Start 2P', cursive;
     color: yellowgreen;
-    font-size: 50px;
-    padding-bottom: 15px;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    text-shadow: -3px 0 DarkSlateGray, 0 0px black, 0px 0 black, 0 -0px black;
 }
 
-.myQuestionContainerStyle {
+/* new game button container */
+
+.css_newgame_container {
     margin-top: 30px;
-    padding-bottom: 40px;
-    background-color: rgb(17, 17, 17);
+    border-radius: 9px;
+    background-color: rgb(19, 18, 18);
 }
 
-.myQuestionStyle {
-    color: gainsboro;
-    font-size: 30px;
-    margin-top: 30px;
-}
-
-.myAnswerStyle {
-    color: gainsboro;
-    margin-left: 35px;
-    margin-top: 25px;
-    font-size: 30px;
-}
-
-.myAnswerStyle:hover {
+.css_newgame_button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20pt;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
     cursor: pointer;
-    /* background-color: greenyellow; */
-    color: rgb(17, 17, 17);
 }
 
-.myTimerStyle {
-    font-family: "Broadway";
+/* trivia question container */
+
+.css_question_container {
+    margin-top: 30px;
+    border-radius: 9px;
+    background-color: rgb(19, 18, 18);
+}
+
+.css_question_qText {
+    color: gainsboro;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.css_question_separator {
+    border: 2px solid gray;
+}
+
+.css_question_aText {
+    color: gainsboro;
+    font-size: 30px;
+    border-left: 8px solid yellowgreen;
+    padding-left: 5px;
+}
+
+.css_question_aText:hover {
+    cursor: pointer;
+}
+
+/* timer */
+
+.css_timer {
+    font-family: 'Press Start 2P', cursive;
     color: red;
-    margin-top: 80px;
     font-size: 60px;
 }
 
-.resultContainer {
-    margin-top: 50px;
-    height: 750px;
-    padding-bottom: 40px;
-    background-color: rgb(26, 173, 100);
+/* result container */
+
+.css_result_container {
+    margin-top: 30px;
+    border-radius: 9px;
+    background-color: rgb(19, 18, 18);
 }
 
-.correctOrIncorrect {
-    color: white;
-    padding-top: 25px;
-    padding-bottom: 15px;
+#id_result_gif {
+    height: 250px;
+    width: 500px;
 }
 
-.endScreen {
+.css_result_text1 {
+    color: gainsboro;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 38px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.css_result_text2 {
+    color: gainsboro;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* end screen container */
+
+.css_endscreen_container {
     margin-top: 50px;
     height: 600px;
     padding-bottom: 40px;
     background-color: rgb(8, 32, 53);
+}
+
+.css_endscreen_text {
+    color: gainsboro;
+    font-size: 30px;
+    margin-top: 30px;
 }

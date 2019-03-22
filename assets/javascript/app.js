@@ -6,7 +6,7 @@ var questions = {
         a2: "Bertram",
         a3: "Carlton",
         c: "Geoffrey",
-        gif: "https://media3.giphy.com/media/CZoOmrTeIeD6w/giphy.gif"
+        gif: "https://media0.giphy.com/media/LDrHdrYEZ7Edy/giphy.gif"
     }],
     q2: [{
         q: "Which TV show theme song had the following opening line? \"It's a rare condition in this day and age to read any good news on the newspaper page.\"",
@@ -14,7 +14,7 @@ var questions = {
         a2: "Family Matters",
         a3: "The Nanny",
         c: "Family Matters",
-        gif: "https://media.giphy.com/media/a47DWEkcmoP8A/giphy.gif"
+        gif: "https://media.giphy.com/media/E8nugbMJEgyre/giphy.gif"
     }],
     q3: [{
         q: "Which of the following is NOT considered a grunge band?",
@@ -38,7 +38,7 @@ var questions = {
         a2: "Tetris",
         a3: "Super Mario Bros",
         c: "Tetris",
-        gif: "https://i.chzbgr.com/full/6086374912/h18618BDF/"
+        gif: "https://media0.giphy.com/media/xstpzu2xZE0JG/source.gif"
     }],
     q6: [{
         q: "Which '90s song was ranked the \"No. 1 greatest one-hit wonder of all time\" by VH1?",
@@ -46,7 +46,7 @@ var questions = {
         a2: "Ice Ice Baby",
         a3: "I'm Too Sexy",
         c: "Macarena",
-        gif: "https://media1.tenor.com/images/0c0ca05f3bba9f9899fb921f02f9a43d/tenor.gif?itemid=7369091"
+        gif: "https://thumbs.gfycat.com/NeedyBowedIvorybackedwoodswallow-size_restricted.gif"
     }],
     q7: [{
         q: "\"Wannabe\" was the Spice Girls' first single. What was the second?",
@@ -54,7 +54,7 @@ var questions = {
         a2: "Say You'll Be There",
         a3: "Who Do You Think You Are",
         c: "Say You'll Be There",
-        gif: "https://media.giphy.com/media/YvyuMxuGoUiOs/giphy.gif"
+        gif: "https://media.giphy.com/media/lIZydkNQiGNUs/giphy.gif"
     }],
     q8: [{
         q: "Which was the highest grossing movie of the '90s?",
@@ -102,7 +102,7 @@ var questions = {
         a2: "Liar Liar",
         a3: "Me, Myself And Irene",
         c: "Me, Myself And Irene",
-        gif: "https://media.giphy.com/media/JbZDQm5SCYXxm/giphy.gif"
+        gif: "https://media1.tenor.com/images/91d5d17205ea2fc791c5516961259e0e/tenor.gif?itemid=7369802"
     }],
     q13: [{
         q: "In which kids show did the character Buttercup feature?",
@@ -121,7 +121,7 @@ var questions = {
         gif: "https://media.giphy.com/media/cPNXOm7ln8HwK7UcbV/giphy.gif"
     }],
     q15: [{
-        q: "This natural disaster -- one of the deadliest in a century -- killed at least 140,000 people in April 1991:",
+        q: "This natural disaster was one of the deadliest of a century, killed at least 140,000 people in April 1991",
         a1: "Earthquake in Iran",
         a2: "Tropical cyclone in Bangladesh",
         a3: "Hurricane Andrew in Florida",
@@ -130,20 +130,20 @@ var questions = {
     }]
 };
 
-window.onload = function () {
+this.onload = function () {
 
-    // hide everything except for the newGameContainer
-    $("#triviaQuestionContainer").hide();
-    $("#resultContainer").hide();
-    $("#endScreenContainer").hide();
+    // hide everything except for the id_newgame_container
+    $("#id_question_container").hide();
+    $("#id_result_container").hide();
+    $("#id_endscreen_container").hide();
 };
 
-$(".newGameButton").click(function () {
+$("#id_newgame_button").click(function () {
 
-    // hide newGameContainer and show the question container
-    $("#newGameContainer").hide();
-    $("#endScreenContainer").hide();
-    $("#triviaQuestionContainer").show(500);
+    // hide id_newgame_container and id_endscreen_container then show the id_question_container
+    $("#id_newgame_container").hide();
+    $("#id_endscreen_container").hide();
+    $("#id_question_container").show(500);
 
     // start the game
     startGame();
@@ -196,10 +196,10 @@ function runQuestionTimer() {
 function showQuestion() {
 
     // using bracket notation
-    $("#question").text(questions["q" + qc][0]["q"]);
-    $("#a1").text(questions["q" + qc][0]["a1"]);
-    $("#a2").text(questions["q" + qc][0]["a2"]);
-    $("#a3").text(questions["q" + qc][0]["a3"]);
+    $("#id_question_qtext").text(questions["q" + qc][0]["q"]);
+    $("#id_question_a1text").text(questions["q" + qc][0]["a1"]);
+    $("#id_question_a2text").text(questions["q" + qc][0]["a2"]);
+    $("#id_question_a3text").text(questions["q" + qc][0]["a3"]);
 };
 
 function decrementQuestionTimer() {
@@ -208,7 +208,7 @@ function decrementQuestionTimer() {
     qTimer--;
 
     // update the time text on the html
-    $("#timer").text(qTimer);
+    $("#id_question_timer").text(qTimer);
 
     // if question timer is zero
     if (qTimer === 0) {
@@ -228,15 +228,15 @@ function decrementQuestionTimer() {
         checkIfCorrect("n/a");
 
         // hide the question container and show the result container
-        $("#triviaQuestionContainer").hide();
-        $("#resultContainer").show(500);
+        $("#id_question_container").hide();
+        $("#id_result_container").show(500);
 
         // then run the result timer
         runResultTimer();
     }
 };
 
-$(".answer").click(function () {
+$(".css_question_aText").click(function () {
 
     // clears the question interval
     clearInterval(qInterval);
@@ -248,8 +248,8 @@ $(".answer").click(function () {
     checkIfCorrect(a);
 
     // hide the question container and show the result container
-    $("#triviaQuestionContainer").hide();
-    $("#resultContainer").show(500);
+    $("#id_question_container").hide();
+    $("#id_result_container").show(500);
 
     // run result timer
     runResultTimer();
@@ -258,34 +258,38 @@ $(".answer").click(function () {
 function checkIfCorrect(a) {
 
     // show gif
-    $("#gif").attr("src", questions["q" + qc][0]["gif"]);
+    $("#id_result_gif").attr("src", questions["q" + qc][0]["gif"]);
 
     // if a is n/a means user didn't click anything
     if (a === "n/a") {
 
-        $('#resultContainer').css("background-color", "darkkhaki");
-        $("#coimsg").text("Hey, you forgot to choose an answer...");
-        $("#coimsg2").text("Why you do that? (゜-゜)");
+        // ! there was no answer from tue user
+
+        $("#id_result_msg1").text("Time's up.");
+        $('#id_result_msg1').css("color", "gainsboro");
+        $("#id_result_msg2").text("\"" + questions["q" + qc][0]["c"] + "\" was the correct answer.");
     }
     else {
 
         // if the choice equals to the correct answer
         if (a === questions["q" + qc][0]["c"]) {
 
-            // set bg color to yellowgreen, show correct answer texct and empty the msg2
-            $('#resultContainer').css("background-color", "yellowgreen");
-            $("#coimsg").text("Yay! Correct answer 〔´∇｀〕");
-            $("#coimsg2").text("");
+            // ! answer is correct
+
+            $("#id_result_msg1").text("CORRECT!");
+            $('#id_result_msg1').css("color", "yellowgreen");
+            $("#id_result_msg2").text("You are awesome.");
 
             // add 1 to the correct question counter
             cqc++;
         }
         else {
 
-            // set bg color to yellowgreen, show correct answer texct and empty the msg2
-            $('#resultContainer').css("background-color", "darkred");
-            $("#coimsg").text("Nope! （・∩・）");
-            $("#coimsg2").text("(Correct answer was " + questions["q" + qc][0]["c"] + " btw)");
+            // ! answer is incorrect
+
+            $("#id_result_msg1").text("NOPE.");
+            $('#id_result_msg1').css("color", "red");
+            $("#id_result_msg2").text("\"" + questions["q" + qc][0]["c"] + "\" was the correct answer.");
 
             // add 1 to the incorrect question counter
             iqc++;
@@ -313,7 +317,7 @@ function decrementResultTimer() {
     console.log("result timer: " + rTimer);
 
     // update the html with counter of next question
-    $("#coimsg3").text("Next question coming up in: " + rTimer);
+    // $("#id_result_msg3").text("Next question coming up in: " + rTimer);
 
     // if result timer is zero
     if (rTimer === 0) {
@@ -328,8 +332,8 @@ function decrementResultTimer() {
             clearInterval(rInterval);
 
             // hide the result container and show the question container
-            $("#resultContainer").hide();
-            $("#triviaQuestionContainer").show(500);
+            $("#id_result_container").hide();
+            $("#id_question_container").show(500);
 
             //and run the question timer
             runQuestionTimer();
@@ -350,12 +354,12 @@ function decrementResultTimer() {
 function showEndScreen() {
 
     // hide question and result container
-    $("#triviaQuestionContainer").hide();
-    $("#resultContainer").hide();
+    $("#id_question_container").hide();
+    $("#id_result_container").hide();
 
-    $("#correctA").text("Correct answers: " + cqc);
-    $("#incorrectA").text("Incorrect answers: " + iqc);
+    $("#id_endscreen_textCorrect").text("Correct answers: " + cqc);
+    $("#id_endscreen_textIncorrect").text("Incorrect answers: " + iqc);
 
     // end screen container
-    $("#endScreenContainer").show(500);
+    $("#id_endscreen_container").show(500);
 };
