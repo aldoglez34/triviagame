@@ -38,6 +38,7 @@ body {
     margin-top: 30px;
     border-radius: 9px;
     background-color: rgb(19, 18, 18);
+    /* background-color: rgb(8, 32, 53); */
 }
 
 .css_newgame_button {
@@ -65,6 +66,7 @@ body {
     margin-top: 30px;
     border-radius: 9px;
     background-color: rgb(19, 18, 18);
+    /* background-color: rgb(8, 32, 53); */
 }
 
 .css_question_qText {
@@ -102,7 +104,8 @@ body {
 .css_result_container {
     margin-top: 30px;
     border-radius: 9px;
-    background-color: rgb(19, 18, 18);
+    /* background-color: rgb(19, 18, 18); */
+    background-color: rgb(8, 32, 53);
 }
 
 #id_result_gif {
@@ -129,14 +132,19 @@ body {
 /* end screen container */
 
 .css_endscreen_container {
-    margin-top: 50px;
-    height: 600px;
-    padding-bottom: 40px;
+    margin-top: 30px;
     background-color: rgb(8, 32, 53);
 }
 
-.css_endscreen_text {
+.css_endscreen_text1 {
+    color: gainsboro;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 38px;
+}
+
+.css_endscreen_text2 {
     color: gainsboro;
     font-size: 30px;
-    margin-top: 30px;
 }
