@@ -138,7 +138,7 @@ this.onload = function () {
     $("#id_endscreen_container").hide();
 };
 
-$("#id_newgame_button").click(function () {
+$(".newgamebutton").click(function () {
 
     // hide id_newgame_container and id_endscreen_container then show the id_question_container
     $("#id_newgame_container").hide();
