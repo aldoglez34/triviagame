@@ -60,6 +60,12 @@ body {
     cursor: pointer;
 }
 
+.css_newgame_button:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
 /* trivia question container */
 
 .css_question_container {
