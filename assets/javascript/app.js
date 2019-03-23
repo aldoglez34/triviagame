@@ -119,14 +119,6 @@ var questions = {
         a3: "Facebook",
         c: "Facebook",
         gif: "https://media.giphy.com/media/cPNXOm7ln8HwK7UcbV/giphy.gif"
-    }],
-    q15: [{
-        q: "This natural disaster was one of the deadliest of a century, killed at least 140,000 people in April 1991",
-        a1: "Earthquake in Iran",
-        a2: "Tropical cyclone in Bangladesh",
-        a3: "Hurricane Andrew in Florida",
-        c: "Tropical cyclone in Bangladesh",
-        gif: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sidr_15nov2007_0930-1500Z_rgb_4k.gif/300px-Sidr_15nov2007_0930-1500Z_rgb_4k.gif"
     }]
 };
 
@@ -303,7 +295,7 @@ function runResultTimer() {
     clearInterval(rInterval);
 
     // set the result timer to 6 seconds
-    rTimer = 10;
+    rTimer = 4;
     console.log("set value of result timer = 6");
 
     // execute decrementResultTimer once every 1000 milliseconds
