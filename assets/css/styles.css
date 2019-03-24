@@ -8,11 +8,7 @@ body {
 .css_header_container {
     margin-top: 30px;
     border-radius: 9px;
-    /* background-color: teal; */
     background-color: rgb(19, 18, 18);
-    /* border-bottom: 10px solid yellow; */
-    /* border-left: 10px solid yellow;
-    border-right: 10px solid yellow; */
 }
 
 .css_header_text1 {
@@ -38,7 +34,6 @@ body {
     margin-top: 30px;
     border-radius: 9px;
     background-color: rgb(19, 18, 18);
-    /* background-color: rgb(8, 32, 53); */
 }
 
 .css_newgame_button {
@@ -72,7 +67,6 @@ body {
     margin-top: 30px;
     border-radius: 9px;
     background-color: rgb(19, 18, 18);
-    /* background-color: rgb(8, 32, 53); */
 }
 
 .css_question_qText {
@@ -110,7 +104,6 @@ body {
 .css_result_container {
     margin-top: 30px;
     border-radius: 9px;
-    /* background-color: rgb(19, 18, 18); */
     background-color: rgb(8, 32, 53);
 }
 
@@ -129,7 +122,6 @@ body {
 
 .css_result_text2 {
     color: gainsboro;
-    /* font-family: 'Press Start 2P', cursive; */
     font-size: 30px;
     margin-top: 25px;
     margin-bottom: 25px;
